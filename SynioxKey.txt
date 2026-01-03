@@ -47,7 +47,7 @@ _0xKI.Parent = _0xMF
 _0xSB.Text = "SUBMIT KEY"
 _0xSB.Position = UDim2.new(0.1, 0, 0.53, 0)
 _0xSB.Size = UDim2.new(0.8, 0, 0, 40)
-_0xSB.BackgroundColor3 = Color3.fromRGB(150, 0, 0) -- Mavi yerine Koyu Kırmızı
+_0xSB.BackgroundColor3 = Color3.fromRGB(150, 0, 0)
 _0xSB.TextColor3 = Color3.fromRGB(255, 255, 255)
 _0xSB.Font = Enum.Font.GothamBold
 _0xSB.TextSize = 16
@@ -58,7 +58,7 @@ _0xSB.Parent = _0xMF
 _0xGK.Text = "GET KEY"
 _0xGK.Position = UDim2.new(0.1, 0, 0.76, 0)
 _0xGK.Size = UDim2.new(0.8, 0, 0, 35)
-_0xGK.BackgroundColor3 = Color3.fromRGB(150, 0, 0) -- Discord mavisi yerine Koyu Kırmızı
+_0xGK.BackgroundColor3 = Color3.fromRGB(150, 0, 0)
 _0xGK.TextColor3 = Color3.fromRGB(255, 255, 255)
 _0xGK.Font = Enum.Font.GothamBold
 _0xGK.TextSize = 14
@@ -69,13 +69,13 @@ _0xGK.Parent = _0xMF
 _0xSB.MouseButton1Click:Connect(function()
     if _0xKI.Text == _0xK then
         _0xSB.Text = "ACCESS GRANTED!"
-        _0xSB.BackgroundColor3 = Color3.fromRGB(46, 204, 113) -- Başarılı (Yeşil kalmalı)
+        _0xSB.BackgroundColor3 = Color3.fromRGB(46, 204, 113)
         task.wait(1)
         _0xSG:Destroy()
         loadstring(game:HttpGet(_0xL))()
     else
         _0xSB.Text = "INVALID KEY!"
-        _0xSB.BackgroundColor3 = Color3.fromRGB(231, 76, 60) -- Hata (Parlak Kırmızı)
+        _0xSB.BackgroundColor3 = Color3.fromRGB(231, 76, 60)
         _0xKI.Text = ""
         task.wait(1)
         _0xSB.Text = "SUBMIT KEY"
@@ -85,7 +85,8 @@ end)
 
 _0xGK.MouseButton1Click:Connect(function()
     if setclipboard then 
-        setclipboard("https://discord.gg/FsG2cGay") 
+        -- Yeni Discord linkin buraya eklendi
+        setclipboard("https://discord.gg/DbAU5Z6HPd") 
         _0xGK.Text = "LINK COPIED!" 
     else 
         _0xGK.Text = "FAILED" 
